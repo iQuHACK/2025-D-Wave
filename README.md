@@ -1,26 +1,26 @@
 # D-Wave iQuHackathon 2025 Challenges
-D-Wave's quantum annealing computers are different than gate-model systems in function, theory and applicability. Due to their size and relative power, D-Wave has been able to build quantum-hybrid tools which are in production and providing customer value today. As such, we are focusing our challenge on solving more "real-world" problems. It would be impractical to expect teams to submit a production-ready application for your final project, but your submissions should reflect needs in business and/or everyday life. Multi-vehicle delivery, production/repair scheduling and resource assignment are all fine places to start.
+D-Wave's quantum annealing computers are different than gate-model systems in function, theory and applicability. Due to their size, D-Wave has been able to build quantum-hybrid tools which are in production and providing customer value today. As such, we are focusing our challenge on solving more "real-world" problems. It would be impractical to expect teams to submit a production-ready application for your final project, but your submissions should reflect needs in business and/or everyday life. Multi-vehicle delivery, production/repair scheduling and resource assignment are all fine places to start.
 
 Unlike gate-model quantum computing, quantum annealing is a method for solving optimization problems. Here are some of the criteria we use to evaluate whether or not a problem is a good fit for our products:
 
-* Is in an optimization problem?
+* Is it an optimization problem?
   * Is there something to maximize or minimize?
-  * What are the decisions that need to be made (variables)?
+  * What are the decisions that need to be made (the variables)?
   * What are the constraints?
 * Is it nonlinear? Our solvers perform best when working on nonlinear (e.g. quadratic) optimization problems.
   * All solvers but the Nonlinear (NL) can work with at most quadratic polynomials in the objective and/or constraints.
   * The NL hybrid solver can work with higher-degree polynomials as well as [other nonlinear functions](https://docs.ocean.dwavesys.com/en/stable/docs_optimization/reference/symbols.html).
 * Will it fit?
-  * Advantage QPUs can take Quadratic Unconstrained Binary Optimization (QUBO) or Ising models as inputs. Depending on problem structure, the maximum number of variables can vary from 170 to 5000+ binary variables.
+  * Advantage™ Quantum Processing Units (QPUs) can take Quadratic Unconstrained Binary Optimization (QUBO) or Ising models as inputs. Depending on problem structure, the maximum number of variables can vary from 170 to 5000+ binary variables.
   * The BQM hybrid solver takes QUBOs or Ising models and can work with up to 1M binary variables.
   * The CQM hybrid solver takes constrained models, treating objectives and constraints separately. It can use binary, integer or continuous variables although it does best with mostly binary and integer decision variables. The maximum problem size is 100k constraints and 500k variables.
-  * The Nonlinear (NL) solver takes in its own Directed Acyclic multi-Graph (DAG) models. The model's DAG can have up to 2M nodes. Variable types can be binary, integer, lists (permutations) or sets (combinations).
+  * The Nonlinear (NL) hybrid solver takes in its own Directed Acyclic multi-Graph (DAG) models. The model's DAG can have up to 2M nodes. Variable types can be binary, integer, lists (permutations) or sets (combinations).
 
 
 ## How to get Access
-D-Wave is not accessible via qBraid, so you will need to reach out to Ken at the event to get access to our solvers. Access allows you to interface with any of our hybrid tools (BQM, CQM and Nonlinear [NL] solvers), Adavantage™ quantum processing units (QPUs) and even our newest prototype Advantage2™ QPU. You will need to provide a valid email address.
+D-Wave is not accessible via qBraid, so you will need to reach out to Ken at the event to get access to our solvers via the Leap™ cloud service. Access allows you to interface with any of our hybrid tools (BQM, CQM and Nonlinear [NL] solvers), Adavantage QPUs and even our newest prototype Advantage2™ QPU. You will need to provide a valid email address.
 
-Once you have signed up for the Leap™ cloud service, you will need to download the Ocean™ software development kit (SDK) onto your device and configure it properly. Instructions can be found at [this link](https://docs.ocean.dwavesys.com/en/latest/getting_started.html?_gl=1*e54m6d*_gcl_aw*R0NMLjE3Mjk1MzcwNTguRUFJYUlRb2JDaE1JMDg2RnpwT2dpUU1WbjJGSEFSM3NrQTZjRUFBWUFTQUFFZ0tYclBEX0J3RQ..*_gcl_au*MTcxOTQ3MTcyNS4xNzMyMzAzNDAxLjEzMzI1MzE2MzguMTczNjE4MjkzNS4xNzM2MTg0NjM5*_ga*MTAxNTk2ODI0Ny4xNzI5Mjc2NTQ1*_ga_DXNKH9HE3W*MTczNjI3MzgxMC41Ni4wLjE3MzYyNzM4MTAuNjAuMC4w). Alternatively, you can access a pre-made environment with any of our [examples](https://github.com/orgs/dwave-examples/repositories?type=all) through GitHub Codespaces.
+Once you have signed up for Leap, you will need to download the Ocean™ software development kit (SDK) onto your device and configure it properly. Instructions can be found at [this link](https://docs.ocean.dwavesys.com/en/latest/getting_started.html?_gl=1*e54m6d*_gcl_aw*R0NMLjE3Mjk1MzcwNTguRUFJYUlRb2JDaE1JMDg2RnpwT2dpUU1WbjJGSEFSM3NrQTZjRUFBWUFTQUFFZ0tYclBEX0J3RQ..*_gcl_au*MTcxOTQ3MTcyNS4xNzMyMzAzNDAxLjEzMzI1MzE2MzguMTczNjE4MjkzNS4xNzM2MTg0NjM5*_ga*MTAxNTk2ODI0Ny4xNzI5Mjc2NTQ1*_ga_DXNKH9HE3W*MTczNjI3MzgxMC41Ni4wLjE3MzYyNzM4MTAuNjAuMC4w). Alternatively, you can access a pre-made environment with any of our [examples](https://github.com/orgs/dwave-examples/repositories?type=all) through GitHub Codespaces.
 
 
 ## Easier Challenges
